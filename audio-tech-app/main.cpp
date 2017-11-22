@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.resize(600,400);
     w.setWindowTitle("Audio Technology App");
+
     w.show();
     
     PaError error;

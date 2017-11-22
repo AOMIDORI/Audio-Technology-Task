@@ -41,6 +41,9 @@
 		FA12B8561FC4BFE4006FA899 /* libportaudio.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FA12B8551FC4BFE4006FA899 /* libportaudio.a */; };
 		FA12B8581FC4C0D9006FA899 /* README.md in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = FA12B8571FC4C0D9006FA899 /* README.md */; };
 		FA251F831FC4E976000C504B /* soundfile_IO.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = FA251F811FC4E976000C504B /* soundfile_IO.cpp */; };
+		FA35513A1FC5D94C000C5122 /* mic.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = FA3551381FC5D94C000C5122 /* mic.svg */; };
+		FA35513B1FC5D94C000C5122 /* folder.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = FA3551391FC5D94C000C5122 /* folder.svg */; };
+		FA35513F1FC5E5A9000C5122 /* record.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = FA35513E1FC5E5A9000C5122 /* record.cpp */; };
 		FAE0950C1FC5B659000F4595 /* libsndfile.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FAE0950B1FC5B658000F4595 /* libsndfile.a */; };
 		FAE0950E1FC5C890000F4595 /* playsine.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = FAE0950D1FC5C890000F4595 /* playsine.cpp */; };
 /* End PBXBuildFile section */
@@ -110,6 +113,9 @@
 		FA12B90F1FC4E291006FA899 /* paex_wmme_surround.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paex_wmme_surround.c; sourceTree = "<group>"; };
 		FA12B9101FC4E291006FA899 /* paex_record.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paex_record.c; sourceTree = "<group>"; };
 		FA251F811FC4E976000C504B /* soundfile_IO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = soundfile_IO.cpp; path = src/soundfile_IO.cpp; sourceTree = "<group>"; };
+		FA3551381FC5D94C000C5122 /* mic.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mic.svg; sourceTree = "<group>"; };
+		FA3551391FC5D94C000C5122 /* folder.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = folder.svg; sourceTree = "<group>"; };
+		FA35513E1FC5E5A9000C5122 /* record.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = record.cpp; path = src/record.cpp; sourceTree = "<group>"; };
 		FAE0950B1FC5B658000F4595 /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = ../../../../../usr/local/Cellar/libsndfile/1.0.28/lib/libsndfile.a; sourceTree = "<group>"; };
 		FAE0950D1FC5C890000F4595 /* playsine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = playsine.cpp; path = src/playsine.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +166,7 @@
 		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				FA3551371FC5D94C000C5122 /* icons */,
 				FA12B9001FC4E291006FA899 /* examples */,
 				4F560985B4D35C999595239E /* main.cpp */,
 				9115C191376947A0918FC395 /* mainwindow.cpp */,
@@ -167,6 +174,7 @@
 				FA12B8591FC4CE07006FA899 /* main.h */,
 				FA251F811FC4E976000C504B /* soundfile_IO.cpp */,
 				FAE0950D1FC5C890000F4595 /* playsine.cpp */,
+				FA35513E1FC5E5A9000C5122 /* record.cpp */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -247,6 +255,16 @@
 			path = ../portaudio/examples;
 			sourceTree = "<group>";
 		};
+		FA3551371FC5D94C000C5122 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				FA3551381FC5D94C000C5122 /* mic.svg */,
+				FA3551391FC5D94C000C5122 /* folder.svg */,
+			);
+			name = icons;
+			path = src/icons;
+			sourceTree = "<group>";
+		};
 		FE0A091FDBFB3E9C31B7A1BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +325,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA35513A1FC5D94C000C5122 /* mic.svg in Copy Bundle Resources */,
+				FA35513B1FC5D94C000C5122 /* folder.svg in Copy Bundle Resources */,
 				FA12B8581FC4C0D9006FA899 /* README.md in Copy Bundle Resources */,
 			);
 			name = "Copy Bundle Resources";
@@ -345,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA251F831FC4E976000C504B /* soundfile_IO.cpp in Compile Sources */,
+				FA35513F1FC5E5A9000C5122 /* record.cpp in Compile Sources */,
 				82E58FAF95D161209A3024BB /* main.cpp in Compile Sources */,
 				FAE0950E1FC5C890000F4595 /* playsine.cpp in Compile Sources */,
 				2141DE59D0A88F3A7A021EA2 /* mainwindow.cpp in Compile Sources */,
