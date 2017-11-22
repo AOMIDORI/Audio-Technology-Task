@@ -1,12 +1,11 @@
 #include "mainwindow.h"
-//#include "main.h"
+#include "main.h"
 #include <QApplication>
-#include <QLabel>
-#include <QString>
 #include <QtWidgets>
+#include <QObject>
 #include <portaudio.h>
 #include <iostream>
-//#include <sndfile.h>
+#include <sndfile.h>
 //#include <pa_mac_core.h>  
 
 int main(int argc, char *argv[])
@@ -17,20 +16,19 @@ int main(int argc, char *argv[])
     w.setWindowTitle("Audio Technology App");
     w.show();
     
-    PaError err = Pa_Initialize();
-    QString info = "Pa initialize result: ";
-    info.append(Pa_GetErrorText(err));
+    PaError error;
+    
+    error= Pa_Initialize();
+    if(error != paNoError){ //Alert initialize error message
+        QMessageBox::information(&w, QObject::tr("Initialize problem"), Pa_GetErrorText(error));
+    }
+    
+    /*QString info = "Portaudio initialize result: "; info.append(Pa_GetErrorText(err));
     QLabel *label = new QLabel(info, &w);
-    label -> resize(400,100);
-    label -> show();
-    printf(  "PortAudio initialize result: %s\n", Pa_GetErrorText( err ) );
-    
-    /*QPushButton *btn = new QPushButton(QApplication::translate("childwidget", "Open a soundfile"), &w);
+    label -> resize(400,100); label -> show();*/
     
     
-    btn->move(100, 100);
-    btn->resize(200,50);
-    btn->show();*/
+
     
     
     

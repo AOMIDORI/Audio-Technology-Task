@@ -3,8 +3,10 @@
 
 #include <QMainWindow>
 #include <QtWidgets>
-#include <QAction>
-#include <QPushButton>
+#include <sndfile.h>
+#include <portaudio.h>
+#include <main.h>
+
 
 namespace Ui {
     class MainWindow;
@@ -19,11 +21,14 @@ public:
     ~MainWindow();
 
 public slots:
-    void openfile();
+    void *openfile();
+    void *playsine();
     
 private:
     Ui::MainWindow *ui;
     QPushButton *open_file_btn;
+    QPushButton *play_sine_btn;
+
 };
 
 #endif // MAINWINDOW_H
