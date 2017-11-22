@@ -39,6 +39,8 @@
 		FA12B8521FC4BF3D006FA899 /* AudioUnit.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FA12B8511FC4BF39006FA899 /* AudioUnit.framework */; };
 		FA12B8541FC4BF4D006FA899 /* Carbon.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FA12B8531FC4BF48006FA899 /* Carbon.framework */; };
 		FA12B8561FC4BFE4006FA899 /* libportaudio.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FA12B8551FC4BFE4006FA899 /* libportaudio.a */; };
+		FA12B8581FC4C0D9006FA899 /* README.md in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = FA12B8571FC4C0D9006FA899 /* README.md */; };
+		FA251F831FC4E976000C504B /* soundfile_IO.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = FA251F811FC4E976000C504B /* soundfile_IO.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,25 @@
 		FA12B8511FC4BF39006FA899 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		FA12B8531FC4BF48006FA899 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		FA12B8551FC4BFE4006FA899 /* libportaudio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libportaudio.a; path = ../portaudio/lib/.libs/libportaudio.a; sourceTree = "<group>"; };
+		FA12B8571FC4C0D9006FA899 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FA12B8591FC4CE07006FA899 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		FA12B9011FC4E291006FA899 /* pa_fuzz.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_fuzz.c; sourceTree = "<group>"; };
+		FA12B9021FC4E291006FA899 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		FA12B9031FC4E291006FA899 /* paex_wmme_ac3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paex_wmme_ac3.c; sourceTree = "<group>"; };
+		FA12B9041FC4E291006FA899 /* paex_write_sine.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paex_write_sine.c; sourceTree = "<group>"; };
+		FA12B9051FC4E291006FA899 /* pa_devs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_devs.c; sourceTree = "<group>"; };
+		FA12B9061FC4E291006FA899 /* paex_read_write_wire.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paex_read_write_wire.c; sourceTree = "<group>"; };
+		FA12B9071FC4E291006FA899 /* paex_mono_asio_channel_select.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paex_mono_asio_channel_select.c; sourceTree = "<group>"; };
+		FA12B9081FC4E291006FA899 /* paex_sine_c++.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "paex_sine_c++.cpp"; sourceTree = "<group>"; };
+		FA12B9091FC4E291006FA899 /* paex_ocean_shore.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paex_ocean_shore.c; sourceTree = "<group>"; };
+		FA12B90A1FC4E291006FA899 /* paex_sine.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paex_sine.c; sourceTree = "<group>"; };
+		FA12B90B1FC4E291006FA899 /* paex_record_file.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paex_record_file.c; sourceTree = "<group>"; };
+		FA12B90C1FC4E291006FA899 /* paex_pink.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paex_pink.c; sourceTree = "<group>"; };
+		FA12B90D1FC4E291006FA899 /* paex_write_sine_nonint.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paex_write_sine_nonint.c; sourceTree = "<group>"; };
+		FA12B90E1FC4E291006FA899 /* paex_saw.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paex_saw.c; sourceTree = "<group>"; };
+		FA12B90F1FC4E291006FA899 /* paex_wmme_surround.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paex_wmme_surround.c; sourceTree = "<group>"; };
+		FA12B9101FC4E291006FA899 /* paex_record.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paex_record.c; sourceTree = "<group>"; };
+		FA251F811FC4E976000C504B /* soundfile_IO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = soundfile_IO.cpp; path = src/soundfile_IO.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,9 +155,12 @@
 		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				FA12B9001FC4E291006FA899 /* examples */,
 				4F560985B4D35C999595239E /* main.cpp */,
 				9115C191376947A0918FC395 /* mainwindow.cpp */,
 				0C89A92A666141222CB56012 /* mainwindow.h */,
+				FA12B8591FC4CE07006FA899 /* main.h */,
+				FA251F811FC4E976000C504B /* soundfile_IO.cpp */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -180,6 +204,7 @@
 		E8C543AB96796ECAA2E65C57 /* audio-tech-app */ = {
 			isa = PBXGroup;
 			children = (
+				FA12B8571FC4C0D9006FA899 /* README.md */,
 				2EB56BE3C2D93CDAB0C52E67 /* Sources */,
 				25B08E2869634E9BCBA333A2 /* Generated Sources */,
 				B8254625CFD509ED2A24A166 /* Sources [moc_predefs] */,
@@ -189,6 +214,30 @@
 				FE0A091FDBFB3E9C31B7A1BD /* Products */,
 			);
 			name = "audio-tech-app";
+			sourceTree = "<group>";
+		};
+		FA12B9001FC4E291006FA899 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				FA12B9011FC4E291006FA899 /* pa_fuzz.c */,
+				FA12B9021FC4E291006FA899 /* CMakeLists.txt */,
+				FA12B9031FC4E291006FA899 /* paex_wmme_ac3.c */,
+				FA12B9041FC4E291006FA899 /* paex_write_sine.c */,
+				FA12B9051FC4E291006FA899 /* pa_devs.c */,
+				FA12B9061FC4E291006FA899 /* paex_read_write_wire.c */,
+				FA12B9071FC4E291006FA899 /* paex_mono_asio_channel_select.c */,
+				FA12B9081FC4E291006FA899 /* paex_sine_c++.cpp */,
+				FA12B9091FC4E291006FA899 /* paex_ocean_shore.c */,
+				FA12B90A1FC4E291006FA899 /* paex_sine.c */,
+				FA12B90B1FC4E291006FA899 /* paex_record_file.c */,
+				FA12B90C1FC4E291006FA899 /* paex_pink.c */,
+				FA12B90D1FC4E291006FA899 /* paex_write_sine_nonint.c */,
+				FA12B90E1FC4E291006FA899 /* paex_saw.c */,
+				FA12B90F1FC4E291006FA899 /* paex_wmme_surround.c */,
+				FA12B9101FC4E291006FA899 /* paex_record.c */,
+			);
+			name = examples;
+			path = ../portaudio/examples;
 			sourceTree = "<group>";
 		};
 		FE0A091FDBFB3E9C31B7A1BD /* Products */ = {
@@ -251,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA12B8581FC4C0D9006FA899 /* README.md in Copy Bundle Resources */,
 			);
 			name = "Copy Bundle Resources";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA251F831FC4E976000C504B /* soundfile_IO.cpp in Compile Sources */,
 				82E58FAF95D161209A3024BB /* main.cpp in Compile Sources */,
 				2141DE59D0A88F3A7A021EA2 /* mainwindow.cpp in Compile Sources */,
 				BA4192E8D5354A4324443192 /* moc_mainwindow.cpp in Compile Sources */,
@@ -334,6 +385,8 @@
 					.,
 					"/usr/local/Cellar/qt/5.9.2/mkspecs/macx-clang",
 					/usr/local/include/,
+					.,
+					/usr/local/Cellar/libsndfile/1.0.28/include/,
 				);
 				INFOPLIST_FILE = Info.plist;
 				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
@@ -341,6 +394,7 @@
 					/usr/local/Cellar/qt/5.9.2/lib,
 					/System/Library/Frameworks/,
 					/usr/local/lib/,
+					/usr/local/Cellar/libsndfile/1.0.28/lib/,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = (
@@ -409,6 +463,8 @@
 					.,
 					"/usr/local/Cellar/qt/5.9.2/mkspecs/macx-clang",
 					/usr/local/include/,
+					.,
+					/usr/local/Cellar/libsndfile/1.0.28/include/,
 				);
 				INFOPLIST_FILE = Info.plist;
 				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
@@ -416,6 +472,7 @@
 					/usr/local/Cellar/qt/5.9.2/lib,
 					/System/Library/Frameworks/,
 					/usr/local/lib/,
+					/usr/local/Cellar/libsndfile/1.0.28/lib/,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
